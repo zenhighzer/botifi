@@ -7,6 +7,12 @@ The python-script will check the provided password for complexicity and compares
 
 ![grafik](https://github.com/user-attachments/assets/280f2632-7e36-406b-95ec-e9a9e12ee2df)
 
+![grafik](https://github.com/user-attachments/assets/1d2e34b1-ec9b-47fb-9181-f351dd89496a)
+
+![grafik](https://github.com/user-attachments/assets/d6797643-2ea7-4ba4-9158-5e8dbd4013ef)
+
+
+
 
 For creating a discord bot account/token, see https://discordpy.readthedocs.io/en/stable/discord.html
 For creating a unifi api token, take a look into unifi-documentation or ask the unifi-bot :-)
