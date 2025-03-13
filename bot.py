@@ -22,8 +22,8 @@ def is_secure_password(password):
         return False, "Umlauts are not allowed! Use ae, oe, ue, ss instead."
     if len(password) > 60:
         return False, "It's too long... (max 60 characters)."
-    if len(password) < 10:
-        return False, "It's too short... (minimum 10 characters)."
+    if len(password) < 12:
+        return False, "It's too short... (minimum 12 characters)."
     if not re.search(r"\d", password):
         return False, "There must be at least one number like 4, 23, 420."
     if not re.search(r"[A-Z]", password):
