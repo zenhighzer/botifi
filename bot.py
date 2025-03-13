@@ -18,8 +18,8 @@ bot = discord.Client(intents=intents)
 
 # Passwort-Kriterien
 def is_secure_password(password):
-    if any(umlaut in password for umlaut in "äöüÄÖÜ"):
-        return False, "Umlauts are not allowed! Use ae, oe, ue instead."
+    if any(umlaut in password for umlaut in "äöüÄÖÜß"):
+        return False, "Umlauts are not allowed! Use ae, oe, ue, ss instead."
     if len(password) > 60:
         return False, "It's too long... (max 60 characters)."
     if len(password) < 10:
