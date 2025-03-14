@@ -3,7 +3,7 @@ Discord-Bot for setting password in unifi-wlan-settings (in my case unifi is run
 
 - Invite your own bot to your discord server and let him set the wifi-password in a unifi-environment.
 - This is useful to allow other people like my wife to set the kid´s wifi-password without accessing unifi-controller directly :)
-- The python-script will check the provided password for complexicity (length, upper/lowercase, numbers and special chars) and finally compares to well-known-passwords in a (german) dictionary. 
+- The python-script will check the provided password for complexicity (length, upper/lowercase, numbers and special chars, umlauts) and finally compares to well-known-passwords in a (german) dictionary. 
 - if password-check is satisfied, the bot will update the wifi´s password.
 
 ![grafik](https://github.com/user-attachments/assets/388b4844-890d-4260-81ae-a3094d9a06a2)
