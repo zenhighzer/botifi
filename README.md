@@ -28,3 +28,4 @@ Just grab this project make some modifications, build and start a container:
 - start container with helper-script "bash start_container.sh" 
 
 This helper-script will ask for the discord-bot´s token, the unifi-api-token and the api-url to the specific wlan/ssid. 
+![grafik](https://github.com/user-attachments/assets/cf6c5cdc-1577-4fa5-ae80-e0a4aedbcc3d)
