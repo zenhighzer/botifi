@@ -34,3 +34,7 @@ This helper-script will ask for the discord-bot´s token, the unifi-api-token an
 Finally you could view the containers log: docker logs botifi -f
 
 ![grafik](https://github.com/user-attachments/assets/18e4d871-3eea-401a-8dd0-875f4465765d)
+
+
+Todo: 
+- add more dictionaries (german, english, l33t, most-used-password, etc.) 
