@@ -16,7 +16,7 @@ Discord-Bot for setting password in unifi-wlan-settings (in my case unifi is run
 
 
 - For creating a discord bot account/token, see https://discordpy.readthedocs.io/en/stable/discord.html
-- !PLEASE you better secure your Discord-Channels properly! Only allow humans you trust and love to talk to the channel where your bot lives in. You dont want others to mess around with your wifi-password!
+- !!!PLEASE SECURE your Discord-Channels properly! Only allow humans you trust and love to talk to the channel where your bot lives in. You dont want others to mess around with your wifi-password!
 - For creating a unifi api token, take a look into unifi-documentation or ask the unifi-bot :-)
 - in my case i use the unifi-default-self-signed cert and the bot is talking to the Unifi-API via "unifi.local", which points to my UCG on IP 192.168.x.y (Replace the IP in helper-script start_container.sh at "--add-host=192.168.x.y")
 - You should replace the cert (unifi-local.crt) with yours.
