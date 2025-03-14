@@ -5,12 +5,11 @@ Invite your own bot to your discord server and let him set the wifi-password in 
 This is useful to allow other people like my wife to set the kid´s wifi-password without accessing unifi-controller directly :)
 The python-script will check the provided password for complexicity and compares to well-known-passwords in a dictionary, if checks are good the bot will update the wifi´s passwort 
 
-![grafik](https://github.com/user-attachments/assets/280f2632-7e36-406b-95ec-e9a9e12ee2df)
+![grafik](https://github.com/user-attachments/assets/388b4844-890d-4260-81ae-a3094d9a06a2)
 
 ![grafik](https://github.com/user-attachments/assets/1d2e34b1-ec9b-47fb-9181-f351dd89496a)
 
 ![grafik](https://github.com/user-attachments/assets/c56cdd97-1e0b-4990-aa4d-65c03857fac9)
-
 
 ![grafik](https://github.com/user-attachments/assets/d6797643-2ea7-4ba4-9158-5e8dbd4013ef)
 
