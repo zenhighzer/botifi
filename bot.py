@@ -47,7 +47,7 @@ def update_unifi(password):
     }
     DATA = {"x_passphrase": password}
     try:
-        response = requests.put(UNIFI_API_URL, headers=HEADERS, json=DATA, timeout=5, verify=False)
+        response = requests.put(UNIFI_API_URL, headers=HEADERS, json=DATA, timeout=5, verify='/usr/local/share/ca-certificates/unifi-local.crt')
         http_rc = response.status_code
         print(f"Unifi HTTP Response Code: {http_rc}")
     except requests.RequestException as e:
@@ -85,12 +85,15 @@ async def on_message(message):
     # Help Menu
     if first_word.lower() == "help" or first_word.lower() == "hilfe":
         help_text = (
-            "🤖 **Bot Befehle:**\n"
+            "🤖 **Bot Commands:**\n"
             "- `set <password>` - Sets a new password (must be safe), example: 'set S3cretPassw0rd!'\n"
             "- `dice` - Roll a dice 🎲\n"
-            "- `slap <username>` - Slaps a user´s ass 🖐️\n"
             "- `bananenbrot` - yummy! 🍌🥖\n"
+            "- `slap <username>` - Slaps a user´s ass 🖐️\n"
+            "- `kiss <username>` - Give someone a kiss 💋\n"
             "- `eggs <username>` - Put your Eggs on someones chin 🥚\n"
+            "- `beer <username>` - Drink a beer 🍺\n"
+            "- `joint <username>` - Roll a joint 🌿🚬\n"
             "- `hilfe or help` - this help box ℹ️ \n"
         )
         await message.channel.send(help_text)
@@ -118,7 +121,26 @@ async def on_message(message):
         target = words[1]
         await message.channel.send(f"😏🥚🥚 {message.author.display_name} put his/her eggs on {target}´s chin 🫦")
         return 
-    
+   
+   # Easter Egg: Smoke a joint
+    if first_word.lower() == "joint" and len(words) > 1:
+        target = words[1]
+        await message.channel.send(f"😏🌿🚬 {message.author.display_name} rolls a joint, takes a deep breath and passes it to {target} 🌿🚬 ")
+        return 
+   
+   # Easter Egg: Drink a beer
+    if first_word.lower() == "beer" and len(words) > 1:
+        target = words[1]
+        await message.channel.send(f"😏🍻 {message.author.display_name} drinks a beer with {target} 😁😁🍻")
+        return 
+
+   # Easter Egg: Give a kiss
+    if first_word.lower() == "kiss" and len(words) > 1:
+        target = words[1]
+        await message.channel.send(f"😘💋 {message.author.display_name} gives {target} a big kiss 🥰🥰💕")
+        return 
+   
+
     # Set password only, if first word is "set"
     if first_word.lower() == "set" and len(words) > 1:
         password = words[1]
